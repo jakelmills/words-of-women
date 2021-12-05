@@ -1,3 +1,8 @@
+@keyframes spin {
+  0% {transform: rotate(0deg) translate(-50%, -50%);}
+  100% {transform: rotate(360deg) translate(-50%, -50%);}
+}
+
 body {
   font-family: "Syne", Arial;
   font-size: 32px;
@@ -7,6 +12,7 @@ body {
   max-width: 1120px;
   margin: 240px auto;
   transition: background-color 0.3s;
+  overflow: hidden;
 }
 
 p {
@@ -25,7 +31,7 @@ header {
 }
 
 header img {
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 header.scrolled img {
@@ -51,4 +57,17 @@ section div {
 
 section img {
   position: relative;
+}
+
+div.stamps {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%
+}
+
+div.stamps img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: spin 30s linear infinite;
 }
