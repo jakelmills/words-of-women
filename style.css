@@ -23,6 +23,14 @@ header {
   z-index: 1;
 }
 
+header img {
+  transition: transform 0.3s;
+}
+
+header.scrolled img {
+  transform: scale(0.50);
+}
+
 section {
   margin: 80px 0;
   display: flex;
