@@ -6,6 +6,7 @@ body {
   background-color: #f4e6d8;
   max-width: 1120px;
   margin: 240px auto;
+  transition: background-color 0.3s;
 }
 
 p {
