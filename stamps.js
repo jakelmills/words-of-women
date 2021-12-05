@@ -14,9 +14,9 @@ const addStamp = function(x, y){
   const img = document.createElement('img')
   img.setAttribute('src', stamps[number])
 
-  const audio = document.createElement('audio')
+/*  const audio = document.createElement('audio')
   audio.setAttribute('src', 'sounds/plop.mp3')
-  audio.play()
+  audio.play()*/
 
   //remove half the window width so it's centre
   img.style.left = (x - window.innerWidth / 2) + 'px'
